@@ -1,0 +1,20 @@
+PODS:
+  - ProgressHUD (2.70)
+  - RAGTextField (0.14.0)
+
+DEPENDENCIES:
+  - ProgressHUD
+  - RAGTextField
+
+SPEC REPOS:
+  trunk:
+    - ProgressHUD
+    - RAGTextField
+
+SPEC CHECKSUMS:
+  ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
+  RAGTextField: ebeab17ae88ce880a85601af33edc2879fa53813
+
+PODFILE CHECKSUM: a1562b00a2ceed188488c3a09d13dfe940de4edd
+
+COCOAPODS: 1.10.0

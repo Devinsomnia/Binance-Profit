@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B0A99F425B61C5B00A01B48 /* BinanceClientInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A99F325B61C5B00A01B48 /* BinanceClientInterface.swift */; };
+		7B0A99F825B61C6F00A01B48 /* BinanceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A99F725B61C6F00A01B48 /* BinanceClient.swift */; };
+		7B0A99FB25B61C8700A01B48 /* BinanceClient+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A99FA25B61C8700A01B48 /* BinanceClient+General.swift */; };
+		7B0A99FE25B61C9800A01B48 /* BinanceClient+Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A99FD25B61C9800A01B48 /* BinanceClient+Market.swift */; };
+		7B0A9A0125B61CAF00A01B48 /* BinanceClient+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A0025B61CAF00A01B48 /* BinanceClient+Account.swift */; };
+		7B0A9A0725B61CF000A01B48 /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A0625B61CF000A01B48 /* Depth.swift */; };
+		7B0A9A0B25B61D0200A01B48 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A0A25B61D0200A01B48 /* Account.swift */; };
+		7B0A9A0E25B61D1400A01B48 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A0D25B61D1400A01B48 /* Balance.swift */; };
+		7B0A9A1225B61D3800A01B48 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A1125B61D3800A01B48 /* HTTPClient.swift */; };
+		7B0A9A1625B61D4900A01B48 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A1525B61D4900A01B48 /* APIConstants.swift */; };
+		7B0A9A1925B61D5A00A01B48 /* APIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A1825B61D5A00A01B48 /* APIParser.swift */; };
+		7B0A9A1D25B61D7D00A01B48 /* BinanceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A1C25B61D7D00A01B48 /* BinanceError.swift */; };
+		7B0A9A2125B61D8F00A01B48 /* String+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A9A2025B61D8F00A01B48 /* String+Encryption.swift */; };
+		7B0A9A2F25B6316000A01B48 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B0A9A2E25B6315F00A01B48 /* SF-Pro-Display-Bold.otf */; };
+		7B0A9A3225B6317100A01B48 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B0A9A3125B6317100A01B48 /* SF-Pro-Display-Regular.otf */; };
+		7BBE526125B3BA080065B0D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE526025B3BA080065B0D7 /* AppDelegate.swift */; };
+		7BBE526525B3BA080065B0D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE526425B3BA080065B0D7 /* ViewController.swift */; };
+		7BBE526A25B3BA090065B0D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BBE526925B3BA090065B0D7 /* Assets.xcassets */; };
+		7BBE526D25B3BA090065B0D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBE526B25B3BA090065B0D7 /* LaunchScreen.storyboard */; };
+		7BBE527925B3BC050065B0D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE527825B3BC050065B0D7 /* MainViewController.swift */; };
+		7BE4AE5F25B3BF5600292D7B /* BinanceProfitDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AE5E25B3BF5600292D7B /* BinanceProfitDefaults.swift */; };
+		7BE4AE6425B3C27000292D7B /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AE6325B3C27000292D7B /* SF-Pro-Display-Semibold.otf */; };
+		7BE4AE6725B3C28400292D7B /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4AE6625B3C28300292D7B /* SF-Pro-Display-Medium.otf */; };
+		7BE4AE6B25B3C2FF00292D7B /* DeviceControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AE6A25B3C2FF00292D7B /* DeviceControl.swift */; };
+		7BE4AE6F25B3C38000292D7B /* RAGTextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AE6E25B3C38000292D7B /* RAGTextField+Extension.swift */; };
+		7BE4AE7225B3C3A500292D7B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4AE7125B3C3A500292D7B /* UIImageView+Extension.swift */; };
+		D5F223E58F1D748C7022294C /* Pods_Binance_Profit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188ED21F2683FB888C59479B /* Pods_Binance_Profit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		180AE3AA548014B9DE4B4C01 /* Pods-Binance Profit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binance Profit.release.xcconfig"; path = "Target Support Files/Pods-Binance Profit/Pods-Binance Profit.release.xcconfig"; sourceTree = "<group>"; };
+		188ED21F2683FB888C59479B /* Pods_Binance_Profit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binance_Profit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0A99F325B61C5B00A01B48 /* BinanceClientInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceClientInterface.swift; sourceTree = "<group>"; };
+		7B0A99F725B61C6F00A01B48 /* BinanceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceClient.swift; sourceTree = "<group>"; };
+		7B0A99FA25B61C8700A01B48 /* BinanceClient+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceClient+General.swift"; sourceTree = "<group>"; };
+		7B0A99FD25B61C9800A01B48 /* BinanceClient+Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceClient+Market.swift"; sourceTree = "<group>"; };
+		7B0A9A0025B61CAF00A01B48 /* BinanceClient+Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinanceClient+Account.swift"; sourceTree = "<group>"; };
+		7B0A9A0625B61CF000A01B48 /* Depth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depth.swift; sourceTree = "<group>"; };
+		7B0A9A0A25B61D0200A01B48 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		7B0A9A0D25B61D1400A01B48 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		7B0A9A1125B61D3800A01B48 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		7B0A9A1525B61D4900A01B48 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		7B0A9A1825B61D5A00A01B48 /* APIParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParser.swift; sourceTree = "<group>"; };
+		7B0A9A1C25B61D7D00A01B48 /* BinanceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceError.swift; sourceTree = "<group>"; };
+		7B0A9A2025B61D8F00A01B48 /* String+Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encryption.swift"; sourceTree = "<group>"; };
+		7B0A9A2325B61DCC00A01B48 /* BinanceSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BinanceSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B0A9A2E25B6315F00A01B48 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		7B0A9A3125B6317100A01B48 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		7BBE525D25B3BA070065B0D7 /* Binance Profit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binance Profit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBE526025B3BA080065B0D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BBE526425B3BA080065B0D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BBE526925B3BA090065B0D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BBE526C25B3BA090065B0D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BBE526E25B3BA090065B0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BBE527825B3BC050065B0D7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7BE4AE5E25B3BF5600292D7B /* BinanceProfitDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceProfitDefaults.swift; sourceTree = "<group>"; };
+		7BE4AE6325B3C27000292D7B /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		7BE4AE6625B3C28300292D7B /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		7BE4AE6A25B3C2FF00292D7B /* DeviceControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceControl.swift; sourceTree = "<group>"; };
+		7BE4AE6E25B3C38000292D7B /* RAGTextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RAGTextField+Extension.swift"; sourceTree = "<group>"; };
+		7BE4AE7125B3C3A500292D7B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		89F87B312EF8F2B1E91C5635 /* Pods-Binance Profit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binance Profit.debug.xcconfig"; path = "Target Support Files/Pods-Binance Profit/Pods-Binance Profit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BBE525A25B3BA070065B0D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F223E58F1D748C7022294C /* Pods_Binance_Profit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50061CDDB76E72BDFBF505B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188ED21F2683FB888C59479B /* Pods_Binance_Profit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B0A99F225B61C3200A01B48 /* Binance */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A9A1B25B61D7000A01B48 /* Utilities */,
+				7B0A9A1025B61D2D00A01B48 /* Networking */,
+				7B0A9A0525B61CDE00A01B48 /* Models */,
+				7B0A9A0425B61CCE00A01B48 /* Client */,
+			);
+			path = Binance;
+			sourceTree = "<group>";
+		};
+		7B0A9A0425B61CCE00A01B48 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A99F325B61C5B00A01B48 /* BinanceClientInterface.swift */,
+				7B0A99F725B61C6F00A01B48 /* BinanceClient.swift */,
+				7B0A99FA25B61C8700A01B48 /* BinanceClient+General.swift */,
+				7B0A99FD25B61C9800A01B48 /* BinanceClient+Market.swift */,
+				7B0A9A0025B61CAF00A01B48 /* BinanceClient+Account.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		7B0A9A0525B61CDE00A01B48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A9A0625B61CF000A01B48 /* Depth.swift */,
+				7B0A9A0A25B61D0200A01B48 /* Account.swift */,
+				7B0A9A0D25B61D1400A01B48 /* Balance.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B0A9A1025B61D2D00A01B48 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A9A1125B61D3800A01B48 /* HTTPClient.swift */,
+				7B0A9A1525B61D4900A01B48 /* APIConstants.swift */,
+				7B0A9A1825B61D5A00A01B48 /* APIParser.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7B0A9A1B25B61D7000A01B48 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A9A1C25B61D7D00A01B48 /* BinanceError.swift */,
+				7B0A9A2025B61D8F00A01B48 /* String+Encryption.swift */,
+				7B0A9A2325B61DCC00A01B48 /* BinanceSwift-Bridging-Header.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7BBE525425B3BA070065B0D7 = {
+			isa = PBXGroup;
+			children = (
+				7BBE525F25B3BA070065B0D7 /* BinanceProfit */,
+				7BBE525E25B3BA070065B0D7 /* Products */,
+				D47E91C62F8945B4F61FDA5F /* Pods */,
+				50061CDDB76E72BDFBF505B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7BBE525E25B3BA070065B0D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BBE525D25B3BA070065B0D7 /* Binance Profit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BBE525F25B3BA070065B0D7 /* BinanceProfit */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A99F225B61C3200A01B48 /* Binance */,
+				7BE4AE6925B3C2F500292D7B /* Extensions */,
+				7BE4AE6225B3C22F00292D7B /* Fonts */,
+				7BBE526025B3BA080065B0D7 /* AppDelegate.swift */,
+				7BBE526425B3BA080065B0D7 /* ViewController.swift */,
+				7BBE526925B3BA090065B0D7 /* Assets.xcassets */,
+				7BBE526B25B3BA090065B0D7 /* LaunchScreen.storyboard */,
+				7BBE526E25B3BA090065B0D7 /* Info.plist */,
+				7BBE527825B3BC050065B0D7 /* MainViewController.swift */,
+				7BE4AE5E25B3BF5600292D7B /* BinanceProfitDefaults.swift */,
+			);
+			path = BinanceProfit;
+			sourceTree = "<group>";
+		};
+		7BE4AE6225B3C22F00292D7B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A9A3125B6317100A01B48 /* SF-Pro-Display-Regular.otf */,
+				7B0A9A2E25B6315F00A01B48 /* SF-Pro-Display-Bold.otf */,
+				7BE4AE6625B3C28300292D7B /* SF-Pro-Display-Medium.otf */,
+				7BE4AE6325B3C27000292D7B /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7BE4AE6925B3C2F500292D7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4AE6A25B3C2FF00292D7B /* DeviceControl.swift */,
+				7BE4AE6E25B3C38000292D7B /* RAGTextField+Extension.swift */,
+				7BE4AE7125B3C3A500292D7B /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D47E91C62F8945B4F61FDA5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89F87B312EF8F2B1E91C5635 /* Pods-Binance Profit.debug.xcconfig */,
+				180AE3AA548014B9DE4B4C01 /* Pods-Binance Profit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BBE525C25B3BA070065B0D7 /* Binance Profit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BBE527125B3BA090065B0D7 /* Build configuration list for PBXNativeTarget "Binance Profit" */;
+			buildPhases = (
+				EA0396982FB9CC949A9B1266 /* [CP] Check Pods Manifest.lock */,
+				7BBE525925B3BA070065B0D7 /* Sources */,
+				7BBE525A25B3BA070065B0D7 /* Frameworks */,
+				7BBE525B25B3BA070065B0D7 /* Resources */,
+				45B04CACEA0FC83D122D0590 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Binance Profit";
+			productName = "Binance Profit";
+			productReference = 7BBE525D25B3BA070065B0D7 /* Binance Profit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BBE525525B3BA070065B0D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7BBE525C25B3BA070065B0D7 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 7BBE525825B3BA070065B0D7 /* Build configuration list for PBXProject "Binance Profit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BBE525425B3BA070065B0D7;
+			productRefGroup = 7BBE525E25B3BA070065B0D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BBE525C25B3BA070065B0D7 /* Binance Profit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BBE525B25B3BA070065B0D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4AE6725B3C28400292D7B /* SF-Pro-Display-Medium.otf in Resources */,
+				7B0A9A2F25B6316000A01B48 /* SF-Pro-Display-Bold.otf in Resources */,
+				7BE4AE6425B3C27000292D7B /* SF-Pro-Display-Semibold.otf in Resources */,
+				7BBE526D25B3BA090065B0D7 /* LaunchScreen.storyboard in Resources */,
+				7B0A9A3225B6317100A01B48 /* SF-Pro-Display-Regular.otf in Resources */,
+				7BBE526A25B3BA090065B0D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B04CACEA0FC83D122D0590 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Binance Profit/Pods-Binance Profit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Binance Profit/Pods-Binance Profit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binance Profit/Pods-Binance Profit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA0396982FB9CC949A9B1266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Binance Profit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BBE525925B3BA070065B0D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBE527925B3BC050065B0D7 /* MainViewController.swift in Sources */,
+				7B0A9A0E25B61D1400A01B48 /* Balance.swift in Sources */,
+				7B0A9A1625B61D4900A01B48 /* APIConstants.swift in Sources */,
+				7B0A9A0125B61CAF00A01B48 /* BinanceClient+Account.swift in Sources */,
+				7BBE526525B3BA080065B0D7 /* ViewController.swift in Sources */,
+				7B0A99FE25B61C9800A01B48 /* BinanceClient+Market.swift in Sources */,
+				7B0A99FB25B61C8700A01B48 /* BinanceClient+General.swift in Sources */,
+				7B0A9A1925B61D5A00A01B48 /* APIParser.swift in Sources */,
+				7BE4AE7225B3C3A500292D7B /* UIImageView+Extension.swift in Sources */,
+				7BE4AE5F25B3BF5600292D7B /* BinanceProfitDefaults.swift in Sources */,
+				7B0A99F825B61C6F00A01B48 /* BinanceClient.swift in Sources */,
+				7B0A9A1D25B61D7D00A01B48 /* BinanceError.swift in Sources */,
+				7B0A9A0725B61CF000A01B48 /* Depth.swift in Sources */,
+				7B0A9A1225B61D3800A01B48 /* HTTPClient.swift in Sources */,
+				7BE4AE6B25B3C2FF00292D7B /* DeviceControl.swift in Sources */,
+				7B0A9A2125B61D8F00A01B48 /* String+Encryption.swift in Sources */,
+				7BE4AE6F25B3C38000292D7B /* RAGTextField+Extension.swift in Sources */,
+				7BBE526125B3BA080065B0D7 /* AppDelegate.swift in Sources */,
+				7B0A99F425B61C5B00A01B48 /* BinanceClientInterface.swift in Sources */,
+				7B0A9A0B25B61D0200A01B48 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BBE526B25B3BA090065B0D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BBE526C25B3BA090065B0D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BBE526F25B3BA090065B0D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		7BBE527025B3BA090065B0D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BBE527225B3BA090065B0D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F87B312EF8F2B1E91C5635 /* Pods-Binance Profit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7282SR9S33;
+				INFOPLIST_FILE = BinanceProfit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tundzhaydzhansaz.Binance-Profit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BinanceProfit/Binance/Utilities/BinanceSwift-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BBE527325B3BA090065B0D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180AE3AA548014B9DE4B4C01 /* Pods-Binance Profit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7282SR9S33;
+				INFOPLIST_FILE = BinanceProfit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tundzhaydzhansaz.Binance-Profit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BinanceProfit/Binance/Utilities/BinanceSwift-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BBE525825B3BA070065B0D7 /* Build configuration list for PBXProject "Binance Profit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBE526F25B3BA090065B0D7 /* Debug */,
+				7BBE527025B3BA090065B0D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BBE527125B3BA090065B0D7 /* Build configuration list for PBXNativeTarget "Binance Profit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBE527225B3BA090065B0D7 /* Debug */,
+				7BBE527325B3BA090065B0D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BBE525525B3BA070065B0D7 /* Project object */;
+}
